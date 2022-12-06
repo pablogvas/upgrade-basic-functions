@@ -41,3 +41,18 @@ function sumAll(param) {
 }
 
 sumAll(numbers);
+
+
+// Iteración #4 //
+
+const numbers2 = [12, 21, 38, 5, 45, 37, 6];
+function average(param) {
+    let media = 0;
+    for(i=0; i<param.length; i++) {
+        media += param[i];
+    }
+    console.log(media / numbers2.length);
+}
+average(numbers2);
+
+
