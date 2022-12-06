@@ -11,3 +11,20 @@ function sum(numberOne , numberTwo) {
     }
 }
 
+// Iteración #2 //
+
+const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.'];
+
+function findLongestWord(param) {
+    let masLargo = param[0];
+    for(i=0; i<=param.length; i++) {
+        if(param[i]?.length > masLargo.length) {
+            masLargo = param[i];
+        }
+    }
+    console.log(masLargo);
+}
+
+findLongestWord(avengers);
+
+
