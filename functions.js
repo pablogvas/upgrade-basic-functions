@@ -17,8 +17,8 @@ const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain
 
 function findLongestWord(param) {
     let masLargo = param[0];
-    for(i=0; i<=param.length; i++) {
-        if(param[i]?.length > masLargo.length) {
+    for(i=0; i<param.length; i++) {
+        if(param[i].length > masLargo.length) {
             masLargo = param[i];
         }
     }
@@ -28,3 +28,16 @@ function findLongestWord(param) {
 findLongestWord(avengers);
 
 
+// Iteración #3 //
+
+const numbers = [1, 2, 3, 5, 45, 37, 58];
+
+function sumAll(param) {
+    let resultado = 0;
+    for(i=0; i<param.length; i++) {
+        resultado += param[i];
+    }
+    console.log(resultado);
+}
+
+sumAll(numbers);
