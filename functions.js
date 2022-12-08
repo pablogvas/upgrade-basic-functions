@@ -56,3 +56,22 @@ function average(param) {
 average(numbers2);
 
 
+// Iteración #5 //
+
+const mixedElements = [6, 1, 'Rayo', 1, 'vallecano', '10', 'upgrade', 8, 'hub'];
+function averageWord(param) {
+    let totalString = 0;
+    let totalNum = 0;
+    for(i=0; i<param.length; i++) {
+        if(typeof param[i] === "string") {
+            totalString += param[i].length;
+        }
+        if(typeof param[i] === "number") {
+            totalNum += param[i];
+        }
+    }
+    let mediaTotal = totalString + totalNum;
+    console.log(mediaTotal/param.length);
+}
+averageWord(mixedElements);
+
