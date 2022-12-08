@@ -134,3 +134,30 @@ function finderName(param, valor) {
 
 finderName(nameFinder, 'Xabier');
 
+
+// Iteración #8 //
+
+const counterWords = [
+    'code',
+    'repeat',
+    'eat',
+    'sleep',
+    'code',
+    'enjoy',
+    'sleep',
+    'code',
+    'enjoy',
+    'upgrade',
+    'code'
+];
+function repeatCounter(param, valor) {
+    let numRepetidas = 0;
+    for(i=0; i<param.length; i++) {
+        if(param[i] === valor) {
+            numRepetidas += 1;
+        }
+    }
+    console.log(numRepetidas);
+}
+
+repeatCounter(counterWords, 'code');
